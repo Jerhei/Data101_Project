@@ -35,6 +35,9 @@ os.listdir(path)
 df = pd.read_csv(os.path.join(path, "Consumption of meat per capita.csv"))
 df.head()
 
+df = pd.read_csv('C:\Users\ponia\Downloads\Final Deploy\MyDashApp\data\Consumption of meat per capita.csv')
+
+
 """# Data Wrangling"""
 
 df.isnull().sum()
@@ -209,3 +212,4 @@ app.layout = html.Div(style={'backgroundColor': '#1E1E2F'}, children=[
 if __name__ == '__main__':
     app.run(debug=True)
     app.run(port=8050)
+
